@@ -1,0 +1,13 @@
+{
+    "name": "task-management-system",
+    "version": "1.0.0",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "mysql2": "^3.11.3"
+    },
+    "devDependencies": {
+        "@hint/configuration-accessibility": "^2.0.15",
+        "hint": "^2.0.0"
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Page</title>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+<style>
+    body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+div{
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+}
+
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 16px solid white;
+    border-top: 20px dotted black;
+    animation: spinAnimate 1s steps(75) 0s infinite normal ;
+}
+
+@keyframes spinAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+</style>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title> Email validator </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-regular fa-envelope"></i>
+                iValidate
+            </div>
+            <ul>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter your email to validate</h1>
+            <br>
+            <form action="/submit" method="post">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input placeholder="Enter your email to validate" type="text" required>
+                <br><br>
+
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="container">
+            <h1>Your Result</h1>
+            <div id="resultCont"></div>
+        </div>
+    </main>
+    <footer>
+        Copright | iValidate.com | All rights reserved
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

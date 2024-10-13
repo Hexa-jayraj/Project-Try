@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="style.css"> <!-- custom CSS file -->
+</head>
+<body>
+    <nav>
+        <a href="#" aria-label="Task Management System">Task Management System</a>
+    </nav>
+    <main class="container">
+        <section class="task-list-section">
+            <h1>Task List</h1>
+            <button id="create-task-btn">Create Task</button>
+            <div id="task-list" role="list">
+                <!-- Task list will be rendered here -->
+            </div>
+        </section>
+        <section class="task-form-section" id="task-form">
+            <h2>Create a New Task</h2>
+            <form id="new-task-form">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" name="task-name" required aria-required="true">
+                <br><br>
+                <label for="task-desc">Task Description:</label>
+                <textarea id="task-desc" name="task-desc" required aria-required="true"></textarea>
+                <br><br>
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="due-date" required aria-required="true">
+                <br><br>
+                <button type="submit" id="submit-task-btn">Create Task</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
