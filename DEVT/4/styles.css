@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #create-task-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #create-task-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  #new-task-form {
+    display: none;
+  }
+  
+  .task {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .task h3 {
+    margin-top: 0;
+  }
+  
+  .status {
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .pending {
+    color: #ff9900;
+  }
+  
+  .in_progress {
+    color: #007bff;
+  }
+  
+  .completed {
+    color: #00ff00;
+  }
+  
+  .delete-task-btn, .update-task-status-btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .delete-task-btn:hover, .update-task-status-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+  .delete-task-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .update-task-status-btn {
+    background-color: #008000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #task-form {
+    display: none;
+  }
